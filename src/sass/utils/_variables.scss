@@ -1,0 +1,30 @@
+// COMMON COLORS
+
+$colorAccent: #e08631;
+
+// TEXT COLORS
+
+$colorTextPrimary: #52503b;
+$colorTextSecondary: #333333;
+$colorTextWhite: #ffffff;
+
+// BACKGROUNDS COLORS
+
+$colorBgDark: #52503b;
+$colorBgBeige: #faf8f0;
+$colorBgLight: #ffffff;
+$colorFeedbackFrame: rgba(82, 80, 59, 0.1);
+$gradientHero: linear-gradient(
+  to right,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)
+);
+
+// BUTTONS COLORS
+$colorBtnDark: #52503b;
+$colorBtnWhite: #ffffff;
+
+// TRANSITION
+
+$transDuration: 250ms;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);

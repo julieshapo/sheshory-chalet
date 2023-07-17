@@ -1,0 +1,10 @@
+.button {
+  width: 115px;
+  height: 40px;
+
+  border: 1px solid $colorTextSecondary;
+  border-radius: 6px;
+
+  background-color: $colorBgLight;
+  color: $colorTextPrimary;
+}

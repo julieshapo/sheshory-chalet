@@ -1,0 +1,38 @@
+.hero {
+  text-align: center;
+  background-image: $gradientHero,
+    url(../images/bg-image/foggy-carpathian-mountains.jpg);
+
+  background-color: $colorBgDark;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  max-width: 4206px;
+  height: 800px;
+
+  &--title {
+    font-size: 48px;
+    line-height: calc(53 / 48);
+    font-weight: 400;
+    color: $colorTextWhite;
+    margin-bottom: 35px;
+  }
+
+  &--text {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    text-transform: uppercase;
+    color: $colorTextWhite;
+  }
+}
+
+.logo-hero {
+  color: $colorTextWhite;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 55px;
+  margin-bottom: 35px;
+}
