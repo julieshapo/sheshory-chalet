@@ -1,10 +1,27 @@
 .button {
-  width: 115px;
+  width: 120px;
   height: 40px;
-
-  border: 1px solid $colorTextSecondary;
   border-radius: 6px;
 
+  border: 1px solid $colorTextSecondary;
   background-color: $colorBgLight;
   color: $colorTextPrimary;
+
+  &:hover,
+  &:focus {
+    background-color: $colorAccent;
+    color: $colorTextPrimary;
+  }
+}
+
+.btn-light {
+  border: 1px solid $colorTextSecondary;
+  background-color: $colorBgLight;
+  color: $colorTextPrimary;
+}
+
+.btn-dark {
+  border: 1px solid $colorBgDark;
+  background-color: $colorBgDark;
+  color: $colorTextWhite;
 }

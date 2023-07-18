@@ -1,0 +1,25 @@
+.about--wrap {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about--item {
+  width: 360px;
+  text-align: left;
+  line-height: calc(20 / 14);
+  color: $colorTextSecondary;
+}
+
+.about--item::before {
+  content: '';
+  display: inline-block;
+  width: 42px;
+  height: 8px;
+  background-color: $colorAccent;
+  margin-bottom: 32px;
+}
+
+.about--text {
+  margin-bottom: 40px;
+}
