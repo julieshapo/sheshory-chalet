@@ -1,0 +1,15 @@
+.details {
+  text-align: left;
+
+  &--columns {
+    display: flex;
+    gap: 32px;
+    text-align: left;
+  }
+
+  &--list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
