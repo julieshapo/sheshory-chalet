@@ -1,0 +1,11 @@
+.feedback {
+  &::before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 42px;
+    height: 8px;
+    background-color: $colorAccent;
+    margin-bottom: 32px;
+  }
+}
