@@ -1,0 +1,19 @@
+.amenities {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+
+  &--desc-wrap {
+    text-align: left;
+  }
+
+  &--title {
+    text-align: left;
+  }
+
+  &--list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+}
