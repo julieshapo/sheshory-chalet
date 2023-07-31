@@ -1,6 +1,7 @@
 .button {
   width: 120px;
   height: 40px;
+
   border-radius: 6px;
 
   border: 1px solid $colorTextSecondary;
@@ -24,4 +25,8 @@
   border: 1px solid $colorBgDark;
   background-color: $colorBgDark;
   color: $colorTextWhite;
+}
+
+.contact--btn {
+  padding: 10px 20px;
 }

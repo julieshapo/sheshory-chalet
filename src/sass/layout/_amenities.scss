@@ -3,17 +3,36 @@
   align-items: center;
   gap: 100px;
 
-  &--desc-wrap {
+  &--title {
     text-align: left;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 42px;
+      height: 8px;
+      background-color: $colorAccent;
+      margin-bottom: 32px;
+    }
   }
 
-  &--title {
+  &--item {
+    display: flex;
+    gap: 16px;
+  }
+
+  &--item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  &--desc-wrap {
     text-align: left;
   }
 
   &--list {
     display: flex;
     align-items: center;
+    text-align: left;
     gap: 32px;
   }
 }

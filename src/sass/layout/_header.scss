@@ -8,25 +8,45 @@
   padding-bottom: 20px;
 
   background-color: $colorBgDark;
-}
 
-.header-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  &--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.site-nav__list {
-  display: flex;
-  gap: 40px;
-}
+  &--logo {
+    color: $colorTextWhite;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 
-.site-nav__link {
-  color: $colorTextWhite;
-}
+  &--contact {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
 
-.logo {
-  color: $colorTextWhite;
-  font-weight: 700;
-  text-transform: uppercase;
+  &--contact-wrap {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &--contact-icon {
+    fill: currentColor;
+  }
+
+  &--contact-link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: $colorTextWhite;
+    font-size: 14px;
+
+    &:hover,
+    &:focus {
+      color: $colorAccent;
+    }
+  }
 }

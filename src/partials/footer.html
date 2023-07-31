@@ -1,15 +1,57 @@
-<footer>
-  <ul>
-    <li><a href="">About</a></li>
-    <li><a href="">Instructions</a></li>
-    <li><a href="">Feedback</a></li>
-    <li><a href="">Contacts</a></li>
-  </ul>
-  <ul>
-    <li>Instagram</li>
-    <li>Tripadvisor</li>
-  </ul>
-  <form action="">Feedback form</form>
-  <a href="">Logo</a>
-  <p>© Guest House, LLC. All rights reserved. Powered by</p>
+<footer class="footer">
+  <div class="container footer--container">
+    <div class="footer--wrap">
+      <a href="">Logo</a>
+      <ul class="footer--list">
+        <li class="footer--item"><a class="footer--link" href="">About</a></li>
+        <li class="footer--item">
+          <a class="footer--link" href="">Rules & Instructions</a>
+        </li>
+      </ul>
+      <!-- <ul class="footer--list">
+        <li>Instagram</li>
+        <li>Tripadvisor</li>
+      </ul> -->
+      <div class="feedback-form">
+        <p class="feedback-form--title">Leave your feedback</p>
+        <form class="feedback-form--form">
+          <div class="feedback-form--field">
+            <label for="user-name" class="feedback-form--label">Name</label>
+
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="feedback-form--input"
+              required
+            />
+          </div>
+          <div class="feedback-form--field">
+            <label for="user-email" class="feedback-form--label">Email</label>
+
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              class="feedback-form--input"
+              required
+            />
+          </div>
+
+          <label for="comment" class="feedback-form--label">Feedback</label>
+          <textarea
+            name="user-comment"
+            id="comment"
+            class="feedback-form--comment"
+            placeholder="Enter text"
+          ></textarea>
+
+          <button type="submit" class="button btn-light">Send</button>
+        </form>
+      </div>
+    </div>
+    <p class="copyright">
+      © Guest House, LLC. All rights reserved. Powered by Julie Shapo
+    </p>
+  </div>
 </footer>
