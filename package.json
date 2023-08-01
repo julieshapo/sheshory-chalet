@@ -18,7 +18,8 @@
     "url": "https://github.com/julieshapo/sheshory-chalet/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "slick-slider": "^1.8.2"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
