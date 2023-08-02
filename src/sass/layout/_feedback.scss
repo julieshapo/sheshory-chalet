@@ -9,3 +9,16 @@
     margin-bottom: 32px;
   }
 }
+
+#reviews-container {
+  max-width: 600px;
+  margin: auto;
+}
+.review {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.rating {
+  font-size: 18px;
+}
