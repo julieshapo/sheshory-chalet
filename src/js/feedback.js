@@ -36,27 +36,3 @@ getReviews();
 //     reviewsContainer.appendChild(reviewDiv);
 //   });
 // }
-
-// async function initMap() {
-//   const map = await new google.maps.Map(document.getElementById('map'), {
-//     center: { lat: 48.65938, lng: 24.8428 },
-//     zoom: 15,
-//   });
-
-//   const service = await new google.maps.places.PlacesService(map);
-//   service.getDetails(
-//     {
-//       placeId,
-//       fields: ['name', 'rating', 'reviews'],
-//     },
-//     (place, status) => {
-//       if (status === google.maps.places.PlacesServiceStatus.OK) {
-//         displayReviews(place.reviews);
-//       } else {
-//         console.error('Error fetching place details:', status);
-//       }
-//     }
-//   );
-// }
-
-// initMap();
