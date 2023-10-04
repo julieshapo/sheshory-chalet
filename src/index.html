@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sheshory Chalet</title>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjuH4eU3K8KKqHhvcEia7VlTv_6stG9Hk&libraries=places"></script> -->
-    <!-- <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjuH4eU3K8KKqHhvcEia7VlTv_6stG9Hk&callback=initMap&libraries=places"
-      async
-      defer
-    ></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
+    <!-- Jquery script -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
@@ -34,16 +30,20 @@
       <include src="./partials/contacts.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
-    <!-- jquery script -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <!-- slider script -->
 
+    <!-- Booking modal -->
+    <include src="./partials/booking-modal.html"></include>
+
+    <!-- Main script -->
+    <script type="module" src="./js/index.js"></script>
+
+    <!-- Google reviews API script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjuH4eU3K8KKqHhvcEia7VlTv_6stG9Hk&libraries=places"></script>
+
+    <!-- Slider script -->
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script type="module" src="./js/feedback.js"></script>
-    <script type="module" src="./js/gallery-slider.js"></script>
-    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
