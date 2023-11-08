@@ -1,20 +1,22 @@
+body.show-modal .modal {
+  transform: scale(0.9);
+}
+
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
 
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.1);
 
-  width: 90%;
-  padding: 30px 15px;
+  width: 95%;
+  min-height: 320px;
+  padding: 30px;
 
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
+  border-radius: 4px;
   text-align: center;
 
-  transform: translate(-50%, -50%);
   transition: transform $transDuration $cubic;
 
   @include mobile {
@@ -28,123 +30,201 @@
   @media screen and (max-height: 685px) {
     top: 100vh;
   }
-}
 
-.modal--form {
-  margin-bottom: 30px;
-}
-
-.modal--title {
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 1.67;
-  letter-spacing: 0.05em;
-  color: black;
-  text-align: center;
-  margin-bottom: 30px;
-
-  @include tablet {
-    font-size: 18px;
-    line-height: 1.15;
-  }
-}
-
-.modal--label {
-  display: block;
-  font-size: 10px;
-  text-align: left;
-  line-height: calc(16 / 12);
-  letter-spacing: 0.01em;
-  margin-bottom: 4px;
-
-  @include tablet {
-    font-size: 12px;
-    line-height: 1.25;
-  }
-}
-
-.modal--input {
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 4px 8px;
-  margin-bottom: 8px;
-  outline: transparent;
-
-  font-size: 14px;
-  color: black;
-  background-color: white;
-
-  transition: border-color $transDuration $cubic;
-
-  @include mobile {
-    min-width: 384px;
+  &--form {
+    margin-bottom: 30px;
   }
 
-  @include tablet {
-    min-width: 288px;
+  &--title {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.67;
+    letter-spacing: 0.05em;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include tablet {
+      font-size: 18px;
+      line-height: 1.15;
+    }
+  }
+
+  &--label {
+    display: block;
+    font-size: 10px;
+    text-align: left;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+
+    @include tablet {
+      font-size: 12px;
+      line-height: 1.25;
+    }
+  }
+
+  &--input {
+    width: 100%;
     height: 40px;
-    line-height: 1.17;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+    outline: transparent;
+
+    font-size: 14px;
+    color: black;
+    background-color: white;
+
+    transition: border-color $transDuration $cubic;
+
+    @include mobile {
+      min-width: 384px;
+    }
+
+    @include tablet {
+      min-width: 288px;
+      height: 40px;
+      line-height: 1.17;
+    }
   }
-}
 
-.modal--date__wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  margin-bottom: 6px;
-}
+  &--date__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 6px;
+  }
 
-.modal--input__date {
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 4px 8px;
-  margin: 0;
-  outline: transparent;
+  &--input__date {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 0;
+    outline: transparent;
 
-  font-size: 14px;
+    font-size: 14px;
 
-  color: black;
-  background-color: white;
+    color: black;
+    background-color: white;
 
-  transition: border-color $transDuration $cubic;
+    transition: border-color $transDuration $cubic;
+  }
+
+  &--comment {
+    width: 100%;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 4px 8px;
+    outline: transparent;
+    margin-bottom: 16px;
+
+    font-size: 14px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 4px;
+      background-color: $colorAccent;
+    }
+  }
+
+  &--input:focus,
+  &--input__date:focus,
+  &--comment:focus {
+    box-shadow: 0.5px 0.5px 7px 0.5px rgba(128, 128, 128, 0.39);
+  }
+
+  &--checkbox-wrap {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+  }
+
+  &--checkbox-note {
+    display: flex;
+
+    font-size: 12px;
+    text-align: left;
+  }
+
+  &--thank-you {
+    display: block;
+
+    &::before {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 30px;
+      height: 6px;
+      background-color: $colorAccent;
+      margin-bottom: 10px;
+    }
+  }
+
+  &--thank-you__details {
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+  }
+
+  &--btn__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border: 1px solid transparent;
+
+    color: black;
+
+    transition: color $transDuration $cubic, transform $transDuration $cubic;
+  }
+
+  &--btn__submit {
+    font-size: 14px;
+  }
+
+  &--btn__submit:disabled {
+    background-color: gray;
+    border: #fff;
+
+    &:hover {
+      background-color: gray;
+      color: #fff;
+    }
+  }
+
+  &--btn__close:hover,
+  &--btn__close:focus {
+    color: $colorAccent;
+    transform: rotate(90deg);
+  }
+
+  &--icon__close {
+    display: inline-block;
+    fill: currentColor;
+  }
 }
 
 .pwm-field-icon {
   display: none;
 }
 
-.modal--comment {
-  width: 100%;
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 4px 8px;
-  outline: transparent;
-  margin-bottom: 16px;
-
-  font-size: 14px;
-
-  &::after {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 4px;
-    background-color: $colorAccent;
-  }
-}
-
-.modal--input:focus,
-.modal--input__date:focus,
-.modal--comment:focus {
-  box-shadow: 0.5px 0.5px 7px 0.5px rgba(128, 128, 128, 0.39);
-}
-
-.style::before {
+.checkbox-styled-line::before {
   content: '';
   display: block;
   width: 20px;
@@ -153,115 +233,41 @@
   margin-bottom: 10px;
 }
 
-.modal--checkbox-wrap {
-  display: flex;
-  align-items: flex-end;
-  margin-bottom: 30px;
-}
-
-.modal--checkbox-note {
-  display: flex;
-
-  font-size: 12px;
-  text-align: left;
-}
-
 .default-checkbox {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.custom-checkbox-frame {
+.custom-checkbox {
   position: absolute;
   right: 29px;
   bottom: 137px;
 
   width: 16px;
   height: 16px;
-  border-radius: 50%;
+  border-radius: 25%;
+  background-color: #fff;
   border: 2px solid $colorAccent;
 }
 
-.custom-checkbox-dot {
-  position: absolute;
-  right: 1px;
-  bottom: 1px;
+.default-checkbox:checked + .custom-checkbox {
+  background-color: $colorAccent;
+  background-image: url(../images/svg/checkmark.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  opacity: 0;
+// Datepicker styles
 
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+.datepicker .datepicker-cell.selected,
+.datepicker .datepicker-cell.selected:hover {
+  color: #fff;
   background-color: $colorAccent;
 }
 
-.default-checkbox:checked + .custom-checkbox-dot {
-  opacity: 1;
-}
-
-.modal--thank-you {
-  display: block;
-
-  &::before {
-    content: '';
-    display: block;
-    margin: 0 auto;
-    width: 30px;
-    height: 6px;
-    background-color: $colorAccent;
-    margin-bottom: 10px;
-  }
-}
-
-.modal--thank-you__details {
-  margin-top: 16px;
-  font-size: 12px;
-  line-height: calc(16 / 12);
-}
-
-.modal--btn__close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-
-  padding: 0;
-  margin: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: transparent;
-  border: 1px solid transparent;
-
-  color: black;
-
-  transition: color $transDuration $cubic, transform $transDuration $cubic;
-}
-
-.modal--btn__close:hover,
-.modal--btn__close:focus {
-  color: brown;
-  transform: rotate(90deg);
-}
-
-.modal--icon__close {
-  display: inline-block;
-  stroke: currentColor;
-  fill: currentColor;
-}
-
-.modal--btn__submit {
-  font-size: 14px;
-}
-
-.modal--btn__submit:disabled {
-  background-color: gray;
-  border: #fff;
-
-  &:hover {
-    background-color: gray;
-    color: #fff;
-  }
+.datepicker .datepicker-cell.focused:not(.selected) {
+  color: #fff;
+  background-color: $colorAccent;
+  font-weight: 600;
 }

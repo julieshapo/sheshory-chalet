@@ -1,14 +1,13 @@
 .bedrooms {
-  margin-bottom: 12px;
-
   &::before {
     content: '';
     display: block;
     margin: 0 auto;
     width: 42px;
     height: 8px;
-    background-color: $colorAccent;
     margin-bottom: 32px;
+
+    background-color: $colorAccent;
   }
 
   &--list {
@@ -26,6 +25,8 @@
   }
 
   &--subtitle {
+    margin-bottom: 8px;
+
     font-weight: 400;
     line-height: calc(24 / 16);
   }
