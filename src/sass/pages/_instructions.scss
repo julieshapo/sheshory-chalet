@@ -1,6 +1,19 @@
 .section-rules {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  &:first-of-type {
+    padding-top: 40px;
+  }
+
+  &:last-of-type {
+    padding-bottom: 60px;
+  }
+
+  @include tablet {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
 }
 
 .section--description-rules {
@@ -11,8 +24,9 @@
 }
 
 .slogan-rules {
-  font-size: 62px;
-  font-weight: 700;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
 
   &::before {
     content: '';
@@ -23,14 +37,22 @@
     background-color: $colorAccent;
     margin-bottom: 32px;
   }
+
+  @include tablet {
+    font-size: 54px;
+  }
+  @media screen and (min-width: 1080px) {
+    font-size: 64px;
+  }
 }
 
 .showed-block {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
-  padding: 24px;
+  align-items: flex-start;
+
+  padding: 32px;
   border: 1px solid $colorBtnDark;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -44,7 +66,7 @@
 }
 
 .hidden-data {
-  padding: 24px;
+  padding: 32px;
 
   border-right: 1px solid $colorBtnDark;
   border-bottom: 1px solid $colorBtnDark;
@@ -53,6 +75,10 @@
   border-bottom-left-radius: 8px;
 
   background-color: $colorBgBeige;
+
+  transform: translateY(-10px);
+
+  transition: transform 0.3s ease-in-out;
 }
 
 .rules--list {
@@ -74,7 +100,6 @@
   &--item {
     display: flex;
     gap: 16px;
-    margin-left: 50px;
 
     &::before {
       content: url(../images/svg/checkmark2.svg);

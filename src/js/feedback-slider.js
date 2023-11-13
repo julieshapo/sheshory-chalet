@@ -2,12 +2,27 @@ import fetchGoogleReviews from './fetch-google-reviews';
 
 function initSlider() {
   $('.reviews-slider').slick({
-    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
     arrows: false,
     dots: true,
+
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+    mobileFirst: true,
   });
 }
 

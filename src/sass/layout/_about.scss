@@ -1,14 +1,30 @@
 .about--wrap {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 40px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
 }
 
 .about--item {
-  width: 360px;
-  text-align: left;
+  width: 280px;
+  text-align: center;
   line-height: calc(20 / 14);
   color: $colorTextSecondary;
+
+  @include mobile {
+    width: 360px;
+  }
+
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .about--item::before {

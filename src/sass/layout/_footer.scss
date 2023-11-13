@@ -1,24 +1,48 @@
 .footer {
-  padding: 100px 0px 20px 0px;
+  padding: 50px 0px 20px 0px;
   width: 100%;
   background-color: $colorBgDark;
   color: $colorTextWhite;
 
+  @include tablet {
+    padding-top: 100px;
+  }
+
   &--wrap {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 52px;
     align-items: center;
     margin-bottom: 100px;
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &--item:not(:last-child) {
     margin-bottom: 12px;
+    text-align: center;
+
+    @include tablet {
+      text-align: center;
+    }
+
+    @include desktop {
+      text-align: left;
+    }
   }
 
   &--link {
     font-size: 14px;
     line-height: calc(20 / 14);
     color: $colorTextWhite;
+
+    &:hover,
+    &:focus {
+      color: $colorAccent;
+    }
   }
 }
 
@@ -27,20 +51,47 @@
   font-size: 12px;
 }
 
+.service--list {
+  display: flex;
+  gap: 12px;
+
+  @include desktop {
+    display: block;
+  }
+}
+
 .service--link {
   display: flex;
   align-items: center;
   gap: 8px;
 
+  font-size: 14px;
   color: $colorTextWhite;
+
+  &__item {
+    text-align: center;
+  }
+
+  &__text {
+    display: none;
+
+    @include desktop {
+      display: block;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+  }
 }
 
 .service--icon__tripadvisor {
-  fill: $colorBgDark;
+  fill: currentColor;
   stroke: currentColor;
 }
 
 .service--icon__booking {
-  fill: $colorBgDark;
-  stroke: currentColor;
+  fill: currentColor;
+  stroke: $colorBgDark;
 }

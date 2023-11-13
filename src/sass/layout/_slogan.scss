@@ -1,6 +1,14 @@
 .slogan--text {
-  font-size: 68px;
+  font-size: 36px;
   font-weight: 700;
+
+  @include tablet {
+    font-size: 48px;
+  }
+
+  @include desktop {
+    font-size: 68px;
+  }
 
   &::before {
     content: '';

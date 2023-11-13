@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 80px;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 20px;
 
   background-color: $colorBgDark;
@@ -39,15 +39,15 @@
     gap: 8px;
     align-items: center;
     color: $colorTextWhite;
-    font-size: 14px;
+    font-size: 12px;
+
+    @include tablet {
+      font-size: 14px;
+    }
 
     &:hover,
     &:focus {
       color: $colorAccent;
     }
   }
-}
-
-.logo--icon {
-  stroke: white;
 }

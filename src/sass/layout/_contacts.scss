@@ -13,8 +13,16 @@
 
   &--container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+
+    align-items: center;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
   }
 
   &--list {
@@ -30,6 +38,10 @@
     align-items: center;
   }
 
+  &--text__wrap {
+    width: 260px;
+  }
+
   &--title {
     font-weight: 500;
     margin-bottom: 6px;
@@ -43,7 +55,7 @@
   &--googlemap {
     width: 290px;
     height: 220px;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 
     @include mobile {
@@ -52,7 +64,7 @@
     @include tablet {
       width: 535px;
       height: 412px;
-      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+      box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.25);
       margin-top: 13px;
     }
     @include desktop {

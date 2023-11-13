@@ -1,5 +1,10 @@
 .hero {
-  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 4206px;
+  height: 600px;
+
   background-image: $gradientHero,
     url(../images/bg-image/foggy-carpathian-mountains.jpg);
 
@@ -7,17 +12,28 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0 auto;
-  padding-top: 250px;
-  padding-bottom: 250px;
-  max-width: 4206px;
-  height: 800px;
+
+  text-align: center;
+
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 800px;
+  }
+
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   &--title {
-    font-size: 48px;
-    line-height: calc(52.8 / 48);
+    font-size: 32px;
     color: $colorTextWhite;
     margin-bottom: 35px;
+
+    @include tablet {
+      font-size: 52px;
+    }
   }
 
   &--text {
@@ -28,10 +44,42 @@
   }
 }
 
-.logo-hero {
-  color: $colorTextWhite;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 55px;
-  margin-bottom: 35px;
+.logo--hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  margin-bottom: 42px;
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__text {
+    color: $colorTextWhite;
+    font-size: 36px;
+  }
+}
+
+.logo-text-wrap {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  &::before {
+    position: absolute;
+    left: -24px;
+
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 92px;
+    background-color: #fff;
+    margin-left: 12px;
+  }
 }

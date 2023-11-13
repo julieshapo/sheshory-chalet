@@ -19,23 +19,25 @@
 
 .slider .slick-arrow {
   position: absolute;
-  top: 50%;
+  top: 40%;
   z-index: 1;
-  font-size: 0;
+
   width: 36px;
   height: 36px;
+  font-size: 0;
+
   border: transparent;
   fill: $colorTextPrimary;
 }
 
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background: url('../images/svg/arrow-left2.svg') 0 0 / 100% no-repeat;
+  background: url('../images/svg/arrow-left.svg') 0 0 / 100% no-repeat;
 }
 
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url('../images/svg/arrow-right2.svg') 0 0 / 100% no-repeat;
+  background: url('../images/svg/arrow-right.svg') 0 0 / 100% no-repeat;
 }
 
 .slider .slick-dots {

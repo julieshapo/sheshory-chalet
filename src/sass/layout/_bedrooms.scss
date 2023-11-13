@@ -12,16 +12,40 @@
 
   &--list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 64px;
+    align-items: center;
+    gap: 36px;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: start;
+      gap: 64px;
+    }
   }
 
   &--item {
-    width: 346px;
+    width: 280px;
+
+    @include mobile {
+      width: 346px;
+    }
   }
 
   &--icon {
+    width: 42px;
+    height: 42px;
     margin-bottom: 12px;
+
+    @include tablet {
+      width: 48px;
+      height: 48px;
+    }
+
+    @include desktop {
+      width: 64px;
+      height: 64px;
+    }
   }
 
   &--subtitle {
