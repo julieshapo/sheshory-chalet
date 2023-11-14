@@ -22,7 +22,7 @@ function initSlider() {
         },
       },
       {
-        breakpoint: 485,
+        breakpoint: 300,
         settings: {
           dots: false,
         },
