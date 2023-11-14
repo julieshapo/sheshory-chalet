@@ -58,6 +58,17 @@
   border-top-left-radius: 8px;
 
   background-color: $colorBgBeige;
+
+  cursor: pointer;
+
+  transition: color $transDuration ease-in-out,
+    background-color $transDuration ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: $colorBtnDark;
+  }
 }
 
 .showed-block::after {
@@ -78,7 +89,7 @@
 
   transform: translateY(-10px);
 
-  transition: transform 0.3s ease-in-out;
+  transition: transform $transDuration $cubic;
 }
 
 .rules--list {

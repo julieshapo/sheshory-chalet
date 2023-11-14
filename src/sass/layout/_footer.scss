@@ -39,6 +39,8 @@
     line-height: calc(20 / 14);
     color: $colorTextWhite;
 
+    transition: color $transDuration $cubic;
+
     &:hover,
     &:focus {
       color: $colorAccent;
@@ -68,6 +70,8 @@
   font-size: 14px;
   color: $colorTextWhite;
 
+  transition: color $transDuration $cubic;
+
   &__item {
     text-align: center;
   }
@@ -94,4 +98,17 @@
 .service--icon__booking {
   fill: currentColor;
   stroke: $colorBgDark;
+}
+
+.repo-link {
+  margin-left: 4px;
+  color: #fff;
+  text-decoration: underline;
+
+  transition: color $transDuration $cubic;
+
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+  }
 }

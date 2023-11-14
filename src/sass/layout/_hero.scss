@@ -53,12 +53,14 @@
   margin-bottom: 42px;
 
   &__icon {
+    fill: $colorAccent;
     width: 100px;
     height: 100px;
   }
 
   &__text {
     color: $colorTextWhite;
+    font-weight: 500;
     font-size: 36px;
   }
 }

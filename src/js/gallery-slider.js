@@ -1,33 +1,34 @@
 $('.slider').slick({
   dots: true,
-  adaptiveHeight: true,
-  slidesToScroll: 1,
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 2000,
-  waitForAnimate: false,
-  pauseOnFocus: false,
-  lazyLoad: 'ondemand',
+  speed: 1000,
+  slidesToShow: 3,
+  slidesToScroll: 3,
 
   responsive: [
     {
       breakpoint: 1200,
       settings: {
         slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
       },
     },
     {
       breakpoint: 760,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 2,
       },
     },
     {
       breakpoint: 485,
       settings: {
         slidesToShow: 1,
+        slidesToScroll: 1,
       },
     },
   ],
-  // mobileFirst: true,
 });

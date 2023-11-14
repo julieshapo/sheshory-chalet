@@ -9,7 +9,11 @@
 .slick-track {
   display: flex;
   align-items: flex-start;
-  gap: 30px;
+  justify-content: center;
+
+  @include tablet {
+    gap: 30px;
+  }
 }
 
 .slider {
@@ -65,4 +69,9 @@
   transition: all 0.3s ease 0s;
   opacity: 0.85;
   text-align: center;
+}
+
+.img {
+  box-shadow: 2px 4px 7px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
 }

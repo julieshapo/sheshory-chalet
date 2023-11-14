@@ -12,12 +12,6 @@
     align-items: center;
   }
 
-  &--logo {
-    color: $colorTextWhite;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
   &--contact {
     display: flex;
     gap: 30px;
@@ -40,6 +34,8 @@
     align-items: center;
     color: $colorTextWhite;
     font-size: 12px;
+
+    transition: color $transDuration $cubic;
 
     @include tablet {
       font-size: 14px;

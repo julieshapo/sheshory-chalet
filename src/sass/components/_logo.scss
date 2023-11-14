@@ -1,0 +1,10 @@
+.logo--icon {
+  fill: $colorAccent;
+
+  transition: fill $transDuration $cubic;
+
+  &:hover,
+  &:focus {
+    fill: $colorTextWhite;
+  }
+}

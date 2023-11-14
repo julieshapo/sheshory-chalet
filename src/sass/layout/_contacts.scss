@@ -50,12 +50,19 @@
   &--link {
     color: $colorTextSecondary;
     font-size: 14px;
+
+    transition: color $transDuration $cubic;
+
+    &:hover,
+    &:focus {
+      color: $colorAccent;
+    }
   }
 
   &--googlemap {
     width: 290px;
     height: 220px;
-    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 4px 7px 4px rgba(0, 0, 0, 0.15);
     border-radius: 2px;
 
     @include mobile {
@@ -64,7 +71,6 @@
     @include tablet {
       width: 535px;
       height: 412px;
-      box-shadow: 5px 5px 20px 7px rgba(0, 0, 0, 0.25);
       margin-top: 13px;
     }
     @include desktop {
