@@ -21,6 +21,12 @@ function initSlider() {
           slidesToShow: 1,
         },
       },
+      {
+        breakpoint: 485,
+        settings: {
+          dots: false,
+        },
+      },
     ],
     mobileFirst: true,
   });
