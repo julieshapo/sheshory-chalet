@@ -50,7 +50,24 @@
 
 .copyright {
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
+
+  @include tablet {
+    font-size: 12px;
+  }
+}
+
+.repo-link {
+  margin-left: 3px;
+  color: #fff;
+  text-decoration: underline;
+
+  transition: color $transDuration $cubic;
+
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+  }
 }
 
 .service--list {
@@ -98,17 +115,4 @@
 .service--icon__booking {
   fill: currentColor;
   stroke: $colorBgDark;
-}
-
-.repo-link {
-  margin-left: 4px;
-  color: #fff;
-  text-decoration: underline;
-
-  transition: color $transDuration $cubic;
-
-  &:hover,
-  &:focus {
-    color: $colorAccent;
-  }
 }

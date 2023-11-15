@@ -10,6 +10,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablet {
+      justify-content: space-between;
+    }
+  }
+
+  &--contact__wrap {
+    display: flex;
+    gap: 24px;
   }
 
   &--contact {
@@ -18,22 +27,8 @@
     align-items: center;
   }
 
-  &--contact-wrap {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-  }
-
-  &--contact-icon {
-    fill: currentColor;
-  }
-
   &--contact-link {
-    display: flex;
-    gap: 8px;
-    align-items: center;
     color: $colorTextWhite;
-    font-size: 12px;
 
     transition: color $transDuration $cubic;
 
@@ -45,5 +40,9 @@
     &:focus {
       color: $colorAccent;
     }
+  }
+
+  &--contact-icon {
+    fill: currentColor;
   }
 }
