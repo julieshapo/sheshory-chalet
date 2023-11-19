@@ -47,6 +47,8 @@
 }
 
 .showed-block {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
 
@@ -71,9 +73,15 @@
   }
 }
 
-.showed-block::after {
-  content: url(../images/svg/chevron-down.svg);
-  display: inline-block;
+.section--arrow-down {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+
+  stroke: $colorAccent;
+  fill: transparent;
+
+  transition: transform 0.25s ease;
 }
 
 .hidden-data {
