@@ -1,0 +1,2 @@
+class e extends HTMLElement{connectedCallback(){const e=this.querySelector(".showed-block"),t=this.querySelector(".hidden-data"),s=this.querySelector(".js-rules-arrow");t.style.display="none",e.addEventListener("click",(()=>{"none"===t.style.display?(t.style.display="block",s.style.transform="rotate(180deg)"):(t.style.display="none",s.style.transform="rotate(0)")}))}constructor(){super()}}customElements.define("custom-rules-view",e);
+//# sourceMappingURL=instructions.6ef47521.js.map
