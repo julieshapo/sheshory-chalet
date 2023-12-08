@@ -28,3 +28,12 @@ $colorBtnWhite: #ffffff;
 
 $transDuration: 250ms;
 $cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+// ANIMATE.SCSS Lib
+
+$use-fadeIn: true;
+$use-fadeInRight: true;
+$use-fadeInUp: true;
+$use-fadeInDown: true;
+$use-zoomIn: true;
+$use-pulse: true;

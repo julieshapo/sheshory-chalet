@@ -1,0 +1,24 @@
+.animated.fadeInRight {
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.animated.fadeIn {
+  animation-duration: 3s;
+}
+
+.animated.fadeInUp {
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+}
+
+.animated.zoomIn {
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+.animated.pulse {
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
